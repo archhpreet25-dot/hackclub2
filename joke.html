@@ -1,0 +1,40 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Joke Factory</title>
+        <link rel="stylesheet" href="joke.css">
+    </head>
+    <body>
+
+    <div class="container">
+
+        <h1>🎭🎭🎭</h1>
+        <h2>JOKE HOUSE</h2>
+        <p>Jokes Ka Non-Stop Supply!</p>
+
+        <div class="selection-box">
+
+            <h3>🎯 Choose Joke Type</h3>
+            <div class="btn-group">
+                <button class="btn type active" onclick="setCategory('Programming', event)">Tech</button>
+                <button class="btn type" onclick="setCategory('Pun', event)">Dad Jokes</button>
+                <button class="btn type" onclick="setCategory('Spooky', event)">Funny</button>
+                <button class="btn type" onclick="setCategory('Misc', event)">Super Funny</button>
+            </div>
+
+        </div>
+
+        <button class="generate-btn" onclick="generateJoke()">
+            GENERATE JOKE
+        </button>
+
+        <div id="jokeBox" class="joke-box">
+            Your joke will appear here 😄
+        </div>
+
+    </div>
+
+    <script src="joke.js"></script>
+    </body>
+    </html>
